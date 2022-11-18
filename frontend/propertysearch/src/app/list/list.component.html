@@ -1,0 +1,29 @@
+<h1>My Properties</h1>
+
+<div class="container">
+<table class="table">
+    <Caption>Properties</Caption>
+    <thead>
+        <tr>
+       <th>id</th>
+       <th>address</th>
+       <th>type</th>
+       <th>legalDescription</th>
+       <th>taxAmount</th>
+       <th>taxStatus</th>
+       <th>lastregistrationDate</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let list of listOfProperties">
+        <td>{{list.id}}</td>
+        <td>{{list.address}}</td>
+        <td>{{list.type}}</td>
+        <td>{{list.legalDescription}}</td>
+        <td>{{list.taxAmount}}</td>
+        <td>{{list.taxStatus}}</td>
+        <td>{{list.lastregistrationDate |date }}</td>
+    </tr>
+    </tbody>
+</table>
+</div>

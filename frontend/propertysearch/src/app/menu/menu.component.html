@@ -1,0 +1,17 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div><a *ngIf="!hardcodedAutheticationservice.isUserLoggedIn()" href="#" class="navbar-brand">
+            Property Search</a></div>
+
+        <ul class="navbar-nav">
+            <li><a    *ngIf="hardcodedAutheticationservice.isUserLoggedIn()" routerLink="/welcome/asha" class="nav-link">Home</a></li>
+            <li><a  *ngIf="hardcodedAutheticationservice.isUserLoggedIn()"  routerLink="/list" class="nav-link">Properties</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+          
+                <li><a   *ngIf="!hardcodedAutheticationservice.isUserLoggedIn()"routerLink="/login" class="nav-link">Login</a></li>
+                <li><a  *ngIf="hardcodedAutheticationservice.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+        </ul>
+    </nav>
+</header>
