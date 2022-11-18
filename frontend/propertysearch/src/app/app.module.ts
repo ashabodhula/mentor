@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
+import { CreatepropertyComponent } from './createproperty/createproperty.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     MenuComponent,
     FooterComponent,
     LogoutComponent,
-    HomeComponent
+    HomeComponent,
+    CreatepropertyComponent
   ],
   imports: [
     BrowserModule,

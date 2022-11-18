@@ -1,6 +1,8 @@
+import { createComponent } from '@angular/compiler/src/core';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { CreatepropertyComponent } from './createproperty/createproperty.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
@@ -16,7 +18,7 @@ const routes: Routes = [
   {path:'welcome/:name',component:WelcomeComponent, canActivate:  [RouteGuardService]},
   {path:'list',component:ListComponent , canActivate:  [RouteGuardService]},
   {path:'logout',component:LogoutComponent},
-
+  {path:'create',component:CreatepropertyComponent,canActivate:  [RouteGuardService]},
   {path:'**',component:ErrorComponent},// to catch different or wrong url
   
 ];
