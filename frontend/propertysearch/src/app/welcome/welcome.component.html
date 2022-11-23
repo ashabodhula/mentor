@@ -1,4 +1,17 @@
-<h1>Welcome</h1>
-<p>Hello {{name}}.</p>
+<H1>Welcome!</H1>
 
-Manage your Properties here<a routerLink="/list">Here</a>
+<div class="container">
+  Welcome {{name}}. You can manage your properties <a routerLink="/list">here</a>
+</div>
+
+<div class="container">
+Click here for customised page
+<button (click)="getWelcomeMessage()" class ="btn btn-success">Get welcome Message</button>
+</div>
+
+
+
+<div class="container" *ngIf="welcomeMessageFromService">
+    <H2>Your Customized Welcome Message</H2>
+    {{welcomeMessageFromService}}
+  </div>

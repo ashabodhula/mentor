@@ -3,7 +3,7 @@ package com.propertysearch.enums;
 public enum Status {
 	
 	PAID,
-	NOTPAID,
-	PARTLYPAID
+	NOT_PAID,
+	PARTLY_PAID
 
 }
